@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.write,
+.show {
+  width: 50%;
+  min-height: 300px;
+  border: 1px solid green;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 95%;
+  height: 90%;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.fx-suggestion {
+  position: absolute;
+}
+.fx-suggestion ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  padding: 2px;
+  background-color: white;
+  box-shadow: 1px 2px 6px 2px rgb(163, 162, 162);
+}
+
+.fx-suggestion li {
+  padding: 2px 10px;
+  border: 1px solid #ccc;
+}
+
+.fx-suggestion li:nth-child(2) {
+  background-color: #f8f5f5;
+}
