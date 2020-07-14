@@ -20,7 +20,6 @@ const functions = {
 }
 
 export default (props) => {
-  console.log(props)
   const [show, setShow] = useState(props.show)
   const [showDescription, setShowDescription] = useState(false)
 
@@ -54,6 +53,7 @@ export default (props) => {
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
             key={i}
+            onClick={() => props}
           >
             <div>{o}</div>
             <div className="descr">
