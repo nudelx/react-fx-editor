@@ -79,6 +79,33 @@ textarea {
   border: 1px solid #ccc;
 }
 
-.fx-suggestion li:nth-child(2) {
-  background-color: #f8f5f5;
+.fx-suggestion li:hover {
+  background-color: #eee;
+}
+
+.sug {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.sug div {
+  margin-right: 10px;
+}
+.descr {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 300px;
+  color: green;
+  text-align: right;
+}
+
+.descr .demo {
+  border-bottom: 1px solid rgb(158, 157, 157);
+  margin-bottom: 10px;
+  padding: 10px;
 }
